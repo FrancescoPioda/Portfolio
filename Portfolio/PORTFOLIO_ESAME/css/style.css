@@ -4,7 +4,7 @@
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
+ abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
@@ -36,7 +36,6 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-
 }
 ol, ul {
 	list-style: none;
@@ -208,9 +207,8 @@ section {
 
  #third{
  	  
- 	background-color:white;
+ 	background-color:black;
  	display: table;
- 	position: center;
  }
 
 #fourth {
@@ -240,10 +238,24 @@ section {
   position: center;
   margin-bottom: 30px;
 
- }
+}
 
 
+#imagelist {
+font-size: 0;
+width: 60%;
+margin: 0 auto;
+padding:0 auto;
+margin-top: 100px;
 
+
+}
+
+#imagelist a {
+margin: 4px;
+display: inline-block;
+
+}
 
 #logo{
 	height: 55px;
@@ -316,24 +328,6 @@ h2{
 	text-align: center;
 	padding-top: 20px;
 }
-
-
-.image-grid {
-    font-size: 0;
-    flex-flow: row wrap; 
-    display: flex;
-    padding: auto;
-    margin-top: 100px;
-    }
-
-	li {
-      flex: auto; 
-      width: 150px;
-      margin: auto;
-
-  }
-
-
 
 
 
