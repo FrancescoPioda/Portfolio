@@ -1,0 +1,339 @@
+
+/*Normalizer*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+body {
+	line-height: 1;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* general content */
+
+header{
+	height: 100px;
+	background-color: black;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+
+}
+
+footer{
+	height: 60px;
+	background-color: black;
+	color: white;
+
+}
+
+section {
+	min-height: 100vh;
+	height: auto;
+	width: 85%;
+	margin: auto;
+	box-shadow: 0px 30px 80px #cbcbcb;
+}
+
+.container{
+	width: 80%;
+	height: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	font-size: 13px;
+	text-align: justify;
+	padding-top: 50px;
+}
+
+.containerheader{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index:1;
+}
+
+/* Slideshow */
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  padding-top: auto;
+  z-index:100;
+
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration:2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Pagine */
+
+#first{
+ 	margin-top: auto;
+ 	padding-top: 100px;
+ 	 background-color: white;
+ 	 display: block;
+ 	 height: 800px;
+
+ }
+
+ #second{
+
+ 	background-color:lightgrey;
+ 	background-image:; 
+ 	height: 1100px;
+ }
+
+ #third{
+ 	  
+ 	background-color:white;
+ 	display: table;
+ 	position: center;
+ }
+
+#fourth {
+
+	background-color: grey;
+}
+
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item {
+  width: 40%;
+  max-width: 100%;
+  margin: auto 0;
+  position: center;
+
+}
+
+.Aligner-item2 {
+  width: 100%;
+  max-width: 100%;
+  margin: auto 0;
+  position: center;
+  margin-bottom: 30px;
+
+ }
+
+
+
+
+#logo{
+	height: 55px;
+	margin-top: 15px;
+
+}
+
+.nav{
+	display: inline-block;
+    float: right;
+    font-size: 1vh;
+
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    padding-top: 45px;
+    margin-right: 20px;
+   
+}
+.nav:hover {
+
+		background: grey;
+		transition: all 0.45s;
+		opacity: 0.7;
+		filter:alpha (opacty=70);
+
+
+   
+}
+
+/* thypography */
+
+a{		
+	color: inherit;
+	text-decoration: none;
+
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	color: black;
+	text-align: left;
+	margin: auto 0		;
+}
+
+h2{
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	color: black;
+	text-align: left;
+	margin: auto 0;	
+
+}
+
+.hometext{
+	font-family: 'Raleway', sans-serif;
+	font-size: 11px;
+	color: black;
+	text-align: justify;
+	margin: auto 0;
+	padding-top: 20px;
+	line-height: 20px
+
+}
+
+#copy{
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+
+
+.image-grid {
+    font-size: 0;
+    flex-flow: row wrap; 
+    display: flex;
+    padding: auto;
+    margin-top: 100px;
+    }
+
+	li {
+      flex: auto; 
+      width: 150px;
+      margin: auto;
+
+  }
+
+
+
+
+

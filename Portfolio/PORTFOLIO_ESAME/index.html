@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- Basic Page Needs -->
+
+	<title> FRANCESCO PIANTA SITE </title>
+	<meta charset="utf-8">
+	<meta name="description" content="All my works and info">
+	<meta name="viewport" content="initial-scale=1">
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- SCRIPTS -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="script/onepage.js"></script>
+
+<!-- FONT -->
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+
+<!--HEADER -->
+
+<header>
+		<div class="containerheader"> 
+
+		<a href="#first"><img id="logo" src="image/logo.svg"></a>
+
+		<a class="nav" href="#fourth" >CONTACT</a>
+		<a class="nav" href="#third">WORKS</a>
+		<a class="nav" href="#second">ABOUT</a>
+		
+		</div>
+
+</header>
+
+<!--SECTION ONE -->
+
+
+<section id="first" class="Aligner">
+
+
+<!-- SLIDER -->
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="image/slide1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="image/slide2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="image/slide3.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<div class="container">  
+  	
+  	  				</h1>
+  					<h2>
+  					Hei!
+  					</h2>
+  					<p class="hometext">
+					_<br>
+					Benvenuto nel mio sito Portfolio dove puoi vedere un po' quello che combino in grafica vettoriale e animazione. Nella sezione dowload puoi trovare del materiale gratuito da scaricare come font o vettoriali. Dai un occhio anche al mio big cartel per acquistare materiale. Per collaborazioni o informazioni non esitare a contattarmi, nella sezione contact troverai tutti i riferimenti. Enjoy! <br>
+
+					_<br>
+					
+					Welcome to my Portfolio site where you can see a bit of what i combine in vector graphics and animation. In the download section you can find free download material such as fonts or vectors. Take a look at my big cartel to buy material. For collaborations or information do not hesitate to contact me, in the contact section you will find all the references. Enjoy! <br>
+					
+					</p>
+					</div>
+				
+  					</h1>
+
+	</div>
+		
+
+</section>
+
+<!--SECTION TWO -->
+
+
+<section id="second" class="Aligner">
+
+				<div class="container">
+
+  					<img class="Aligner-item2" src="image/me.png">
+
+  					<h1 class= "Aligner-item">
+
+  					<span style="background-color:white">ABOUT / ME</span>
+  								
+
+   	  				</h1>
+  					<p class="hometext">
+					_<br>
+					Mi chiamo Francesco Pianta da sempre sono appassionato di grafica e illustrazione, in particolare il mondo del lettering. Durante gli studi ho comiciato a scoprire la grafica vettoriale ed affinandola ho trovato i primi lavori sia in ufficio che come freelance.
+					Col passare degli anni ho portato avanti alcuni progetti personali inerenti il brand desing ed i loghi. Sono laureato all'accademia di Brera nell indirizzo Nuove Tecnologie per l'arte, posto dove preso le basi per l'animazione digitale ed i video.
+
+
+					 <br>
+
+					_<br>
+					
+										
+					My name is Francesco Pianta. I am always passionate about graphics and illustrations, in particular I have always fascinated the world of lettering. During the studies I started to discover the vector graphics and affinate it I found the first jobs both in the office and as a freelance.
+					Over the years I have carried on some personal design projects relating to brand desing and logos. I graduated at the Brera Academy in the New Art Technologies address, where I got the basics for digital animation and videos. <br>
+					
+					</p>
+					</div>
+				
+  					</h1>
+
+
+  				</div>
+</section>
+
+
+<!--SECTION THREE -->
+
+
+<section id="third" class="Aligner">
+
+<ul class="image-grid">
+  <li><a href=""><img src="image/squalo.jpg"></a></li>
+   <span class="overlay"></span>
+
+</ul>
+
+</section>
+
+
+
+<!--SECTION FOUR -->
+<section id="fourth" class="Aligner">
+
+				<div class="container">
+
+  					<h1 class= "Aligner-item">
+
+  					<span style="background-color:white">CONTACT / ME</span>
+  								
+
+   	  				</h1>
+  					<p class="hometext">
+
+					_<br>
+					Per collaborazioni, informazioni o un feed sui lavori manda pure una maii oppure visita le mie pagine istagram e facebook 
+
+
+					 <br>
+
+					_<br>
+					
+										
+					My name is Francesco Pianta. I am always passionate about graphics and illustrations, in particular I have always fascinated the world of lettering. During the studies I started to discover the vector graphics and affinate it I found the first jobs both in the office and as a freelance.
+					Over the years I have carried on some personal design projects relating to brand desing and logos. I graduated at the Brera Academy in the New Art Technologies address, where I got the basics for digital animation and videos. <br>
+					
+					</p>
+					</div>
+				
+  					</h1>
+
+  				</div>
+</section>
+
+<footer>
+<p id="copy">
+	&copy; 2017  //  Francesco Pianta all right reserved 
+</p>	
+</footer>
+
+
+
+</body>
+</html>
